@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ApplyTab extends StatefulWidget {
+class LifeTab extends StatefulWidget {
   @override
-  _ApplyTab createState() => _ApplyTab();
+  _LifeTab createState() => _LifeTab();
 }
 
-class _ApplyTab extends State<ApplyTab> {
+class _LifeTab extends State<LifeTab> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       // appBar: new AppBar(
-      //   title: new Text('申请'),
+      //   title: new Text('生活'),
       // ),
       body: new Center(
-        child: new Text('Apply'),
+        child: new Text('Life'),
       ),
     );
   }

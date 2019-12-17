@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './pages/MyTab.dart';
-import './pages/NotificationTab.dart';
-import './pages/ApplyTab.dart';
+import './pages/LifeTab.dart';
+import './pages/WelcomeTab.dart';
+import './pages/WorkTab.dart';
 
 void main(){
   runApp(
@@ -40,10 +40,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       body: new TabBarView(
         controller: tabcontroller,
         children: <Widget>[
-          //创建之前写好的三个页面，万物皆是Widget
-          new NotificationTab(),
-          new ApplyTab(),
-          new MyTab(),
+          new WelcomeTab(),
+          new WorkTab(),
+          new LifeTab(),
         ],
       ),
       bottomNavigationBar: new Material(
@@ -52,9 +51,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         child: new TabBar(
           controller: tabcontroller,
           tabs: <Tab>[
-            new Tab(text: "通知",icon: new Icon(Icons.notifications_active)),
-            new Tab(text: "申请",icon: new Icon(Icons.accessibility)),
-            new Tab(text: "我的",icon: new Icon(Icons.home)),
+            new Tab(text: "欢迎",icon: new Icon(Icons.home)),
+            new Tab(text: "工作",icon: new Icon(Icons.work)),
+            new Tab(text: "生活",icon: new Icon(Icons.person)),
           ],
           //tab被选中时的颜色，设置之后选中的时候，icon和text都会变色
           labelColor: Colors.amber,

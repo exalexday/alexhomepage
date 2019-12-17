@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MyTab extends StatefulWidget {
+class WorkTab extends StatefulWidget {
   @override
-  _MyTab createState() => _MyTab();
+  _WorkTab createState() => _WorkTab();
 }
 
-class _MyTab extends State<MyTab> {
+class _WorkTab extends State<WorkTab> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       // appBar: new AppBar(
-      //   title: new Text('我的'),
+      //   title: new Text('工作'),
       // ),
       body: new Center(
-        child: new Text('My'),
+        child: new Text('Work'),
       ),
     );
   }
